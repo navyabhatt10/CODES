@@ -6,9 +6,9 @@ Each element in the result must be unique and you may return the result in any o
 #include<bits/stdc++.h>
 using namespace std;
 
- vector<int> intersection(vector<int>& nums1, vector<int>& nums2)
-    {
-          vector<int> ans;
+vector<int> intersection(vector<int>& nums1, vector<int>& nums2)
+{
+        vector<int> ans;
         unordered_map<int,int> m;
         for(int i =0;i<nums1.size();i++)
         {
@@ -23,8 +23,8 @@ using namespace std;
                 m[nums2[j]]=-1;
             }
         }
-        return ans;
-    }
+         return ans;
+}
 
 int main()
 {
